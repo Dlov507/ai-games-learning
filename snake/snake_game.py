@@ -17,6 +17,12 @@ while running:
             running = False
 
     screen.fill((0, 0, 0))
+    # add the object to the blanc screen with RGB and positioning
+    # x = 100   → 100 pixels from the left
+    # y = 100   → 100 pixels from the top
+    # width = 20
+    # height = 20
+    pygame.draw.rect(screen, (0, 255, 0), (100, 100, 20, 20))
     pygame.display.update()
 
 pygame.quit()

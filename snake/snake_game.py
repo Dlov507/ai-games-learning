@@ -20,7 +20,16 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+            # key is pressed check which key is it ?
         if event.type == pygame.KEYDOWN:
+            # in the key up we subtract becasue the  origin is top dowm
+            # like this (0,0)
+            #  ┌───────────────→ x
+            #  │
+            #  │
+            #  │
+            #  ↓
+            #  y
             if event.type == pygame.K_RIGHT:
                 dx = 5
                 dy = 0
